@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc584c02-b973-4fa3-b337-2ccb585af14e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AutomateWebElements/HandlingStaticDropdowns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HandlingStaticDropdowns">
+  <component name="RunManager" selected="Application.DropdownLoopingUI">
     <configuration name="BrowserNavigationActivities" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SeleniumLocators.BrowserNavigationActivities" />
       <module name="SeleniumPlayground" />
@@ -76,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandlingStaticDropdowns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingStaticDropdowns" />
+    <configuration name="DropdownLoopingUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.DropdownLoopingUI" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
@@ -89,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParseStringMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SeleniumLocators.ParseStringMethod" />
+    <configuration name="HandlingStaticDropdowns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingStaticDropdowns" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SeleniumLocators.*" />
+          <option name="PATTERN" value="AutomateWebElements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DropdownLoopingUI" />
         <item itemvalue="Application.HandlingStaticDropdowns" />
         <item itemvalue="Application.BrowserNavigationActivities" />
         <item itemvalue="Application.ChildToParentXpath" />
         <item itemvalue="Application.SiblingswithXpathTraverse" />
-        <item itemvalue="Application.ParseStringMethod" />
       </list>
     </recent_temporary>
   </component>
