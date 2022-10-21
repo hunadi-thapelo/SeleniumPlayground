@@ -48,7 +48,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.HandlingDynamicDropdown">
+  <component name="RunManager" selected="Application.HandlingAutoSuggestiveDropdown">
     <configuration name="BrowserNavigationActivities" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SeleniumLocators.BrowserNavigationActivities" />
       <module name="SeleniumPlayground" />
@@ -62,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChildToParentXpath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SeleniumLocators.ChildToParentXpath" />
+    <configuration name="DropdownLoopingUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.DropdownLoopingUI" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SeleniumLocators.*" />
+          <option name="PATTERN" value="AutomateWebElements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropdownLoopingUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.DropdownLoopingUI" />
+    <configuration name="HandlingAutoSuggestiveDropdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingAutoSuggestiveDropdown" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
@@ -116,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HandlingAutoSuggestiveDropdown" />
         <item itemvalue="Application.HandlingDynamicDropdown" />
         <item itemvalue="Application.DropdownLoopingUI" />
         <item itemvalue="Application.HandlingStaticDropdowns" />
         <item itemvalue="Application.BrowserNavigationActivities" />
-        <item itemvalue="Application.ChildToParentXpath" />
       </list>
     </recent_temporary>
   </component>
