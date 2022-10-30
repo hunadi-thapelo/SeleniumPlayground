@@ -30,6 +30,7 @@ public class AssertionsForVerification {
         //2 AssertTrue & print
         Assert.assertTrue(driver.findElement(By.cssSelector("input[name*='StudentDiscount'")).isSelected());
         System.out.println(driver.findElement(By.cssSelector("input[name*='StudentDiscount'")).isSelected());
+        driver.findElement(By.cssSelector("input[name*='StudentDiscount'")).click();
 
         // AssertEquals verify with text
         Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "2 Adult");
