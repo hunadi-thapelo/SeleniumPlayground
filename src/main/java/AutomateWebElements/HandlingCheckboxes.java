@@ -31,5 +31,6 @@ public class HandlingCheckboxes {
         System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 
 
+
     }
 }
