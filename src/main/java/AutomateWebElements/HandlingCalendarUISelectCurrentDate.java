@@ -31,11 +31,21 @@ public class HandlingCalendarUISelectCurrentDate {
             Thread.sleep(2000);
 
             //Handle calendar UI - Select current date
-           driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+            driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+            System.out.println(driver.findElement(By.id("Div1")).getAttribute("Style"));//before clicking Round trip radio button
+            driver.findElement(By.xpath("//input[@value='RoundTrip']")).click();
+            System.out.println(driver.findElement(By.id("Div1")).getAttribute("Style"));//after clicking Round trip radio button
 
-           driver.close();
+            /*if(driver.findElement(By.id("Div1")).getAttribute("Style").contains("0.5"))
+            {
+                System.out.println("Is disabled");
+            }
+            else
+            {
+                System.out.println("Is enabled");
+            }*/
 
-
+            //driver.close();
 
         }
     }
