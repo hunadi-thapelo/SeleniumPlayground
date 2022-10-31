@@ -4,27 +4,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class addItemsToShoppingCartOptimised {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("chromedriver", "/usr/local/bin/");
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        //driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         String[] veggiesNeeded = {"Brocolli","Cucumber","Beetroot","Carrot"};
+        Thread.sleep(2000);
         addToCart(driver,veggiesNeeded);
 
         driver.findElement(By.xpath("//a[@class='cart-icon']")).click();
-        //driver.findElement(By.xpath("//div[@contains(text(),'PROCEED TO CHECKOUT')]")).click();
         driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+        //Explicit Wait
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("promoCode")));
         driver.findElement(By.className("promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.className("promoBtn")).click();
+        //Explicit Wait
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("promoInfo")));
         System.out.println(driver.findElement(By.className("promoInfo")).getText());
 
     }
@@ -39,7 +44,7 @@ public class addItemsToShoppingCartOptimised {
             //Approach: Get name of 30 veggies items
             String[] veggiesNames = listOfItems.get(i).getText().split("-");
             String itemName = veggiesNames[0].trim();
-            List allNames = Arrays.asList(veggiesNeeded); //Convert Array to Arraylist for easy search
+            List<String> allNames = Arrays.asList(veggiesNeeded); //Convert Array to Arraylist for easy search
 
             if (allNames.contains(itemName)) {
                 //add to cart
