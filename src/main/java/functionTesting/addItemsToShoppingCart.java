@@ -5,9 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 public class addItemsToShoppingCart {
     public static void main(String[] args)
@@ -18,11 +19,11 @@ public class addItemsToShoppingCart {
         //How to handle when multiple products are required
         //Declare an array (Java concept) - *an Array takes less memory compared to an ArrayList
             //hence declaring an arraying first
-        String[] productsNeeded = {"Brocolli","Cucumber","Beetroot"};
+        String[] productsNeeded = {"Brocolli","Cucumber","Beetroot", "Brinjal"};
         //variable used later as counter - represent 3 productsNeeded in array
-
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
         int j = 0;
@@ -32,12 +33,12 @@ public class addItemsToShoppingCart {
             //split and trim Selenium method
             //Split turns name into an array e.g Cucumber - 1kg
             String[] name = products.get(x).getText().split("-");
-            System.out.println(name);
+            //System.out.println(name);
             //Trim to remove spaces e.g 'Cucumber '
             String formattedName = name[0].trim();
 
            //1.Convert array to array list for easy search
-            List allProducts = Arrays.asList(productsNeeded);
+            List<String> allProducts = Arrays.asList(productsNeeded);
             //2.Check whether product expected is present in the list or not
             if (allProducts.contains(formattedName))
             {
