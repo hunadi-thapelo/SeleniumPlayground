@@ -19,7 +19,7 @@ public class WebElementsQuiz {
         System.out.println("A: (//input[@name='Selenium'][3]");
 
         System.out.println("Q3: How do count number of checkboxes on a webpage?");
-        System.out.println("A: driver.findElements(By.cssSelector("input[type='checkbox']")).size()";
+        //System.out.println("A: driver.findElements(By.cssSelector("input[type='checkbox']")).size()";
 
         System.out.println("Q4: How do we capture the message visible on the alerts?");
         System.out.println("A: driver.switchTo().alert.getText()");
