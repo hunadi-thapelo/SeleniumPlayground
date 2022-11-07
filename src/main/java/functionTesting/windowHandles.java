@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.SQLOutput;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -26,7 +25,11 @@ public class windowHandles {
         driver.switchTo().window(childId);
         //System.out.println(driver.getTitle()); //debug
         //Thread.sleep(3000);
-        System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
+        //System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
+        String email = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at")[1].trim().split(" ")[0];
+        driver.switchTo().window(parentID);
+        driver.findElement(By.id("username")).sendKeys(email);
+
 
 
 
