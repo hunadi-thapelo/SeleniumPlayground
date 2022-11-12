@@ -20,8 +20,11 @@ public class linksCount {
             //limit drive scope to footer section
             //create driver sublet
         WebElement footer = driver.findElement(By.id("gf-BIG"));
-
         System.out.println(footer.findElements(By.tagName("a")).size());
+
+        //Test case 3: Get count of links for first column on footer
+        WebElement columnfooter = footer.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
+        System.out.println(columnfooter.findElements(By.tagName("a")).size());
 
 
     }
