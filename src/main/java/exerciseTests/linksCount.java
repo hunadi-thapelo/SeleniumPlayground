@@ -1,13 +1,14 @@
 package exerciseTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class linksCount {
 
-    public static void main (String[] args){
+    public static void main (String[] args) throws InterruptedException {
 
         System.setProperty("chromedriver", "/usr/local/bin");
         WebDriver driver = new ChromeDriver();
@@ -23,8 +24,17 @@ public class linksCount {
         System.out.println(footer.findElements(By.tagName("a")).size());
 
         //Test case 3: Get count of links for first column on footer
-        WebElement columnfooter = footer.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
-        System.out.println(columnfooter.findElements(By.tagName("a")).size());
+        WebElement columnFooter = footer.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
+        System.out.println(columnFooter.findElements(By.tagName("a")).size());
+
+        //Test case 4: Click on all column 1 links and verify links are opening
+        int x = columnFooter.findElements(By.tagName("a")).size();
+        for(int i=1; i< x; i++)
+        {
+            String clickOnLinks = Keys.chord(Keys.COMMAND,Keys.ENTER); //COMMAND FOR MAC; CONTROL FOR WINDOWS
+            columnFooter.findElements(By.tagName("a")).get(i).sendKeys(clickOnLinks);
+            Thread.sleep(5000);
+        }
 
 
     }
