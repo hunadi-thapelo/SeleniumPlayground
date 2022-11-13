@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class linksCount {
 
     public static void main (String[] args) throws InterruptedException {
@@ -34,7 +37,21 @@ public class linksCount {
             String clickOnLinks = Keys.chord(Keys.COMMAND,Keys.ENTER); //COMMAND FOR MAC; CONTROL FOR WINDOWS
             columnFooter.findElements(By.tagName("a")).get(i).sendKeys(clickOnLinks);
             Thread.sleep(5000);
+        }//Open all pages on separate tabs
+
+        //Get and print all the window page titles
+        Set<String> xyz = driver.getWindowHandles();
+        Iterator<String> nextW = xyz.iterator();
+
+        while(nextW.hasNext()) //checks index (windows)
+        {
+            driver.switchTo().window(nextW.next());
+            System.out.println(driver.getTitle());
+
         }
+
+
+
 
 
     }
