@@ -13,12 +13,19 @@ public class dynamicTestingAssignment6 {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
-        driver.findElement(By.id("checkBoxOption1")).click();
-        String optionSelected = driver.findElement(By.id("checkBoxOption1")).getText();
+
+        WebElement checkboxOption = driver.findElement(By.id("checkBoxOption1"));
+        checkboxOption.click();
+        System.out.println("Test2 is "+checkboxOption.getAttribute("value"));
+        //String optionSelected = driver.findElement(By.id("checkBoxOption1")).getText();
 
         WebElement dropdown = driver.findElement(By.id("dropdown-class-example"));
         Select dropdownElement = new Select(dropdown);
-        //dropdownElement.selectByVisibleText(optionSelected);
+        dropdownElement.selectByVisibleText("Option2");
+
+
+
+
 
 
 
