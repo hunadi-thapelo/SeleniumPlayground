@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -23,7 +24,10 @@ public class windowTableLevelScroll {
         js.executeScript("document.querySelector('.tableFixHead').scrollTop=3000");
 
         //Requirement: Table grid - sum up values in 4th column
-        List<WebElement> values = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)")); //store all values in list
+        List<WebElement> values = driver.findElements(
+                By.cssSelector(".tableFixHead td:nth-child(4)")
+        ); //store all values in list
+
         int total = 0;
         //loop through values to sum up
         for(int i=0; i<values.size(); i++)
@@ -32,6 +36,15 @@ public class windowTableLevelScroll {
         }
 
         System.out.println("The total is "+ total);
+        //Requirement: Parse string on web page (expected) and compare with sum (actual)
+        int actualValue = Integer.parseInt(
+                driver.findElement(By.className("totalAmount"))
+                        .getText().split(":")[1].trim()
+        );
+        //Assert (TestNG) - to get test result (fail or pass)
+        Assert.assertEquals(total,actualValue);
+
+        driver.close();
 
     }
 }
