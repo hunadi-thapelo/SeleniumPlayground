@@ -14,5 +14,10 @@ public class windowTableLevelScroll {
         JavascriptExecutor js = (JavascriptExecutor) driver; //cast your driver
         js.executeScript("window.scrollBy(0,500)");
 
+        Thread.sleep(3000);//3sec pause to see table scroll
+        //scroll component in DOM - in example, a table
+        js.executeScript("document.querySelector('.tableFixHead').scrollTop=3000");
+
+
     }
 }
