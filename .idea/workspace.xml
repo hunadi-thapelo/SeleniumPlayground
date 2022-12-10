@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc584c02-b973-4fa3-b337-2ccb585af14e" name="Changes" comment="">
+    <list default="true" id="bc584c02-b973-4fa3-b337-2ccb585af14e" name="Changes" comment="Soft assertion to automate multiple broken links with Java method openConnection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -38,23 +42,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3234127",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3234127&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.AssertionsForVerification">
-    <configuration name="AssertionsForVerification" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.AssertionsForVerification" />
+}</component>
+  <component name="RunManager" selected="Application.relativeLocators">
+    <configuration name="automateBrokenLinks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="browserMiscTopics.automateBrokenLinks" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomateWebElements.*" />
+          <option name="PATTERN" value="browserMiscTopics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DropdownLoopingUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.DropdownLoopingUI" />
+    <configuration name="automateMultipleBrokenLinks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="browserMiscTopics.automateMultipleBrokenLinks" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomateWebElements.*" />
+          <option name="PATTERN" value="browserMiscTopics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandlingAutoSuggestiveDropdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingAutoSuggestiveDropdown" />
+    <configuration name="handlingCalendarUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exerciseTests.handlingCalendarUI" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomateWebElements.*" />
+          <option name="PATTERN" value="exerciseTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandlingCheckboxes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingCheckboxes" />
+    <configuration name="relativeLocators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SeleniumLocators.relativeLocators" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomateWebElements.*" />
+          <option name="PATTERN" value="SeleniumLocators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandlingDynamicDropdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AutomateWebElements.HandlingDynamicDropdown" />
+    <configuration name="takeScreenshot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="browserMiscTopics.takeScreenshot" />
       <module name="SeleniumPlayground" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AutomateWebElements.*" />
+          <option name="PATTERN" value="browserMiscTopics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AssertionsForVerification" />
-        <item itemvalue="Application.HandlingCheckboxes" />
-        <item itemvalue="Application.HandlingAutoSuggestiveDropdown" />
-        <item itemvalue="Application.HandlingDynamicDropdown" />
-        <item itemvalue="Application.DropdownLoopingUI" />
+        <item itemvalue="Application.relativeLocators" />
+        <item itemvalue="Application.handlingCalendarUI" />
+        <item itemvalue="Application.automateMultipleBrokenLinks" />
+        <item itemvalue="Application.automateBrokenLinks" />
+        <item itemvalue="Application.takeScreenshot" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +138,203 @@
       <option name="presentableId" value="Default" />
       <updated>1664012517754</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding asertion">
+      <created>1667138145122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667138145122</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding explicit waits to improve performance">
+      <created>1667207937866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667207937866</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding explicit waits and assertions">
+      <created>1667208354955</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667208354955</updated>
+    </task>
+    <task id="LOCAL-00004" summary="validating enabled and disabled with getAttribute">
+      <created>1667253210449</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667253210449</updated>
+    </task>
+    <task id="LOCAL-00005" summary="no signficant changes">
+      <created>1667253310656</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667253310656</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed deprecated wait error, added 4th product needed, fixed unparameterized 'List' array">
+      <created>1667298453547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667298453547</updated>
+    </task>
+    <task id="LOCAL-00007" summary="right-click and text select (double click) mouse interactions">
+      <created>1667737798470</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667737798470</updated>
+    </task>
+    <task id="LOCAL-00008" summary="web elements udemy Rahul course quiz">
+      <created>1667737903272</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667737903272</updated>
+    </task>
+    <task id="LOCAL-00009" summary="split and trim methods and switch to parent window">
+      <created>1667848262971</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667848262971</updated>
+    </task>
+    <task id="LOCAL-00010" summary="assignment handling nested frames and operating on them">
+      <created>1668115912640</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668115912640</updated>
+    </task>
+    <task id="LOCAL-00011" summary="get count of links of 1st column on webpage footer">
+      <created>1668286739683</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668286739683</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Open each link on separate tabs, using for loop">
+      <created>1668334121869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668334121869</updated>
+    </task>
+    <task id="LOCAL-00013" summary="iterate through each page and print page titles">
+      <created>1668345159258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668345159258</updated>
+    </task>
+    <task id="LOCAL-00014" summary="dynamic testing Assignment06">
+      <created>1668464630502</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668464630502</updated>
+    </task>
+    <task id="LOCAL-00015" summary="dynamic testing Assignment06: get attribute value, dropdown selection WIP">
+      <created>1668543522222</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668543522222</updated>
+    </task>
+    <task id="LOCAL-00016" summary="dynamic testing Assignment06: completed">
+      <created>1668549909531</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668549909531</updated>
+    </task>
+    <task id="LOCAL-00017" summary="dynamic testing Assignment06: instructor's answer, use Xpath to traverse to checkbox label text on test case 1, used if statement to verify test case 4">
+      <created>1668550829203</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668550829203</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Travel website testing - handling calendar UI: selected departure and arrival cities">
+      <created>1668876548557</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668876548557</updated>
+    </task>
+    <task id="LOCAL-00019" summary="scroll window level with javascript executor">
+      <created>1668978000197</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668978000197</updated>
+    </task>
+    <task id="LOCAL-00020" summary="working with calendar static select dropdown">
+      <created>1668978180706</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668978180706</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add scroll table element with javascript executor">
+      <created>1669062331976</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669062331976</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Parse string on web page expected and compare with actual sum">
+      <created>1669067191453</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669067191453</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Handling https security certifications">
+      <created>1669150244194</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669150244194</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Proxy class: set capability to chrome behaviour">
+      <created>1669409513893</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669409513893</updated>
+    </task>
+    <task id="LOCAL-00025" summary="handling screenshot with FileHandler class">
+      <created>1669444436664</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669444436664</updated>
+    </task>
+    <task id="LOCAL-00026" summary="automate broken link with Java method openConnection">
+      <created>1669449494648</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669449494648</updated>
+    </task>
+    <task id="LOCAL-00027" summary="automate multiple broken links with Java method openConnection and assertion">
+      <created>1669663379818</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669663379818</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Soft assertion to automate multiple broken links with Java method openConnection">
+      <created>1669665512737</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669665512737</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,10 +342,50 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="no signficant changes" />
+    <MESSAGE value="update unparametrized array" />
+    <MESSAGE value="fixed deprecated wait error, added 4th product needed, fixed unparameterized 'List' array" />
+    <MESSAGE value="right-click and text select (double click) mouse interactions" />
+    <MESSAGE value="web elements udemy Rahul course quiz" />
+    <MESSAGE value="split and trim methods and switch to parent window" />
+    <MESSAGE value="assignment handling nested frames and operating on them" />
+    <MESSAGE value="get count of links of 1st column on webpage footer" />
+    <MESSAGE value="Open each link on separate tabs, using for loop" />
+    <MESSAGE value="iterate through each page and print page titles" />
+    <MESSAGE value="dynamic testing Assignment06" />
+    <MESSAGE value="dynamic testing Assignment06: get attribute value, dropdown selection WIP" />
+    <MESSAGE value="dynamic testing Assignment06: completed" />
+    <MESSAGE value="dynamic testing Assignment06: instructor's answer, use Xpath to traverse to checkbox label text on test case 1, used if statement to verify test case 4" />
+    <MESSAGE value="Travel website testing - handling calendar UI: selected departure and arrival cities" />
+    <MESSAGE value="scroll window level with javascript executor" />
+    <MESSAGE value="working with calendar static select dropdown" />
+    <MESSAGE value="add scroll table element with javascript executor" />
+    <MESSAGE value="Parse string on web page expected and compare with actual sum" />
+    <MESSAGE value="Handling https security certifications" />
+    <MESSAGE value="Proxy class: set capability to chrome behaviour" />
+    <MESSAGE value="handling screenshot with FileHandler class" />
+    <MESSAGE value="automate broken link with Java method openConnection" />
+    <MESSAGE value="automate multiple broken links with Java method openConnection and assertion" />
+    <MESSAGE value="Soft assertion to automate multiple broken links with Java method openConnection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Soft assertion to automate multiple broken links with Java method openConnection" />
   </component>
 </project>
